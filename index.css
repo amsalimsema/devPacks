@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  font-weight: 500;
+}
+
+hr.hr_main {
+  border: 1px solid hotpink;
+  width: 100%;
+}
+
+.main {
+  height: 100vh;
+  background-color: hotpink;
+}
+.main_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  width: 100%;
+}
+.main_basic,
+.main_starter,
+.main_bespoke {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 15px 10px;
+  margin: 10px;
+  width: 300px;
+  height: 350px;
+  line-height: 25px;
+  transition: 1s ease-in;
+}
+
+.main_basic:hover,
+.main_starter:hover,
+.main_bespoke:hover {
+  transform: scale(0.98);
+  cursor: pointer;
+}
+
+.main_basic > h1,
+h2,
+.main_starter > h1,
+h2,
+.main_bespoke > h1,
+h2 {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.main_bespoke_btn {
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: hotpink;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.main_bespoke_btn:hover {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+}
+@media screen and (max-width: 650px) {
+  .main {
+    height: auto;
+  }
+  .main_inner {
+    flex-wrap: wrap;
+    padding: 100px 0;
+  }
+  .main_basic,
+  .main_starter,
+  .main_bespoke {
+    margin: 5px;
+    width: 90%;
+  }
+  input,
+  textarea {
+    max-width: 310px;
+  }
+}
+
+/* form */
+.form_main {
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form_intro {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  max-width: 450px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
