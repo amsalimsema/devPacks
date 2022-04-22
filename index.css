@@ -23,7 +23,7 @@ hr.hr_main {
 
 .main {
   height: 100vh;
-  background-color: hotpink;
+  background-color: lightpink;
 }
 .main_inner {
   display: flex;
@@ -37,8 +37,8 @@ hr.hr_main {
 .main_bespoke {
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   padding: 15px 10px;
@@ -95,29 +95,38 @@ h2 {
   }
   input,
   textarea {
-    max-width: 310px;
+    max-width: 320px;
+  }
+  .form_intro h1,
+  p {
+    text-align: center;
+    margin-bottom: 1rem;
   }
 }
 
 /* form */
-.form_main {
+.form_main,
+.thankyou {
   height: 100vh;
   overflow-x: hidden;
-  background-color: brown;
+  background-color: lightpink;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .form_intro {
-  margin-bottom: 20px;
+  margin: 0 20px 20px 20px;
 }
 
 input,
 textarea {
-  max-width: 450px;
+  background-color: lightpink;
+  width: 450px;
   border: 2px solid gray;
   border-radius: 5px;
   padding: 10px;
   margin: 10px 0;
 }
+
+/* thank you */
